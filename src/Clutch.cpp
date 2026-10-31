@@ -1,13 +1,13 @@
 #include "Clutch.h"
 
-void Clutch::open()
+void Clutch::disengage()
 {
     _servoDriver->writeMicroseconds(CLUTCH_CHANNEL, degreesToUs(MAX_CLUTCH_POS));
     _currentClutchPositionDeg = MAX_CLUTCH_POS;
 }
 
 
-void Clutch::close()
+void Clutch::disengage()
 {
     _servoDriver->writeMicroseconds(CLUTCH_CHANNEL, degreesToUs(MIN_CLUTCH_POS));
     _currentClutchPositionDeg = MIN_CLUTCH_POS;

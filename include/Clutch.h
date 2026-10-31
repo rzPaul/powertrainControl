@@ -16,8 +16,8 @@ private:
 
 public:
     void linkDrv(Adafruit_PWMServoDriver * driver);
-    void open();
-    void close();
+    void disengage();
+    void engage();
     void setPos(int posDeg);
 };
 

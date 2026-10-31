@@ -14,9 +14,10 @@ constexpr int SCL_PIN = A5;
 constexpr uint8_t SERVO_DRIVER_ADDR = 0x40;
 
 constexpr uint8_t IDLE_RPM = 100; // hardcoded an idle similar to a gas engine
-constexpr uint8_t IDLE_THROTTLE = 51;
+constexpr uint8_t IDLE_THROTTLE_PERCENT = 20;
 
 inline int degreesToUs(int degrees)
 {
     return map(degrees, 0, 180, 500, 2500);
 }
+

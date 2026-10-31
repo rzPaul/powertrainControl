@@ -6,9 +6,9 @@
 class Motor
 {
 private:
-    int _currentThrottle;
+    int _currentThrottlePercent;
     
 public: 
     int getCurrentThrottle(); 
-    void sendMotorCommand(int pwmValue);
+    void sendMotorCommand(int throttlePercent);
 };
